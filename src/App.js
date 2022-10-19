@@ -1,19 +1,16 @@
-import { CssModules } from "./components/CssModules";
-import { Emotion } from "./components/Emotion";
-import { InlineStyle } from "./components/InlineStyle";
-import { StyledComponents } from "./components/StyledComponents";
-import { StyledJsx } from "./components/StyledJsx";
+import { Router } from "./router/Router";
+
 
 function App() {
+  /**
+   * Browser RouterはReactプロジェクトの中で一度しか使えない
+   * React RouteはBrowser Routerの中でしか使えない
+   * React18からは完全一致のパスになる
+   */
   return (
     <>
-      <div className="App">
-          <InlineStyle />
-          <CssModules />
-          <StyledJsx />
-          <StyledComponents />
-          <Emotion />
-      </div>
+      <Router />
+      <div className="App"></div>
     </>
   );
 }
