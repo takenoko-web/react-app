@@ -22,18 +22,18 @@ export const Router = () => {
         <>
             <BrowserRouter>
                 <Routes>
-                <Route path={''} element={<Home />} />
-                <Route path={'page1'} >
-                    <Route index={true} element={<Page1 />} />
-                    <Route path={'A'} element={<Page1A />} />
-                    <Route path={'B'} element={<Page1B />} />
-                </Route>
-                <Route path={'page2'} >
-                    <Route index={true} element={<Page2 />} />
-                    <Route path={':paramater'} element={<UrlParamater />} />
-                </Route>
-                <Route path={'query'} element={<Query />} />
-                <Route path={`*`} element={<NotFound />} />
+                    <Route path={''} element={<Home />} />
+                    <Route path={'page1'} >
+                        <Route index={true} element={<Page1 />} />
+                        <Route path={'A'} element={<Page1A />} />
+                        <Route path={'B'} element={<Page1B />} />
+                    </Route>
+                    <Route path={'page2'} >
+                        <Route index={true} element={<Page2 />} />
+                        <Route path={':paramater'} element={<UrlParamater />} />
+                    </Route>
+                    <Route path={'query'} element={<Query />} />
+                    <Route path={`*`} element={<NotFound />} />
                 </Routes>
             </BrowserRouter>
         </>
