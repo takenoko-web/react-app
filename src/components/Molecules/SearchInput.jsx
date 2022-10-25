@@ -1,8 +1,9 @@
+import { memo } from "react";
 import styled from "styled-components";
 import { PrimaryButton } from "../Atoms/buttons/PrimaryButton"
 import { Input } from "../Atoms/inputs/Input";
 
-export const SearchInput = () => {
+export const SearchInput = memo(()=> {
     return (
         <>
             <div>
@@ -15,7 +16,7 @@ export const SearchInput = () => {
             </div>
         </>
     );
-}
+})
 
 const SButtonWrapper = styled.div`
     padding-left: 8px;

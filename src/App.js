@@ -1,4 +1,5 @@
 import { Router } from "./App/router/Router";
+import { UserProvider } from "./providers/UserProvider";
 
 function App() {
 /**
@@ -22,7 +23,9 @@ function App() {
  */
   return (
     <>
-      <Router/>
+      <UserProvider>
+        <Router/>
+      </UserProvider>
     </>
   );
 }
